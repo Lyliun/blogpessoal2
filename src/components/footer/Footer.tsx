@@ -1,4 +1,4 @@
-import { FacebookLogo, InstagramLogo, LinkedinLogo } from "@phosphor-icons/react"
+import { InstagramLogoIcon, LinkedinLogoIcon, FacebookLogoIcon } from "@phosphor-icons/react"
 
 function Footer() {
     // Captura o ano atual dinamicamente
@@ -13,9 +13,15 @@ function Footer() {
                     </p>
                     <p className='text-lg'>Acesse nossas redes sociais</p>
                     <div className='flex gap-2'>
-                        <LinkedinLogo size={48} weight='bold' />
-                        <InstagramLogo size={48} weight='bold' />
-                        <FacebookLogo size={48} weight='bold' />
+                        <a href="https://linkedin.com/in/itlia" target="blank">
+                            <LinkedinLogoIcon size={48} className="hover:text-blue-500" weight="bold" />
+                        </a>
+                        <a href="https://instagram.com/itlia" target="blank">
+                            <InstagramLogoIcon size={48} className="hover:text-pink-500" weight="bold" />
+                        </a>
+                        <a href="https://facebook.com/itlia" target="blank">
+                            <FacebookLogoIcon size={48} className="hover:text-blue-700" weight="bold" />
+                        </a>
                     </div>
                 </div>
             </div>
